@@ -50,7 +50,6 @@ h1 span {
 }
 
 .offer {
-	/*margin-top: 176px;*/
 	width: 490px;
 }
 
@@ -115,7 +114,6 @@ h1 span {
 .skill {
 	width: 350px;
 	background: url('../img/icon1.jpg') no-repeat left top;
-	padding-left: 100px;
 	text-align: center;
 }
 
@@ -129,12 +127,13 @@ h1 span {
 .skill-text {
 	margin-top: 7px;
 	font-family: Ubuntu 400;
-}
-
+	flex-direction: column;
+               }
 
 .skill-free{width: 380px;
 	background: url('../img/icon2.jpg') no-repeat left top;
-    text-align: center;   
+   
+
    }
 .skill-change {
 	background: url('../img/icon3.jpg') no-repeat left top;
@@ -168,7 +167,6 @@ h1 span {
 }
 
 .btn-form {
-
     margin: 5px auto;  
     border: 1px;
 	font-family: Montserrat black;
@@ -199,6 +197,78 @@ h1 span {
 	margin-top: 60px;
 
       }
-     
+   
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+}
+@media screen and (max-width: 1100px) {
+	.container {
+		width: 800px;
+	}
+	.pilot{
+      width: 500px;
+	   }
+}
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.offer {
+		width: 100%;
+	}
+	.intro {
+		width: auto;
+	}
+	.desktop {
+		display: block;
+	    width: 549px;
+	    margin: 72px auto 0;
+	}
+	.skills {
+		flex-direction: column;
+	}
+	.skill {
+		width: auto;
+		margin-bottom: 30px;
+	}
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 740px) {
+	.container {
+		width: 540px;
+	}
+	.desktop {
+		width: 100%;
+	}
+	.input {
+		width: 100%;
+	}
+	.btn {
+		margin-left: 0;
+	    margin-top: 15px;
+	    width: 100%;
+	}
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 60%;
+
+	}
+.pilot {
+	width: 300px;
+		}
+}
+
 
 
